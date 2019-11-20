@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="تصغير الخط"
+        android:id="@+id/out"
+        android:icon="@drawable/out"
+        app:showAsAction="always" />
+
+    <item
+        android:title="تكبير الخط"
+        android:id="@+id/in"
+        android:icon="@drawable/in"
+        app:showAsAction="always" />
+
+
+
+</menu>

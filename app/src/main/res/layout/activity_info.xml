@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.ahmed.salah.kingsoftheoldworld.Info"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        app:theme="@style/AppToolbar"
+        android:id="@+id/infoToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+
+
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:id="@+id/infoImg"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/askandr"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:layout_margin="8dp"
+                        android:textStyle="normal"
+                        android:gravity="right"
+                        android:textSize="15sp"
+                        android:id="@+id/contentTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingMultiplier="1.6"
+                        android:text="@string/ashor"
+                        android:textColor="#252220" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-7728492295600846/8984247775">
+        </com.google.android.gms.ads.AdView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
